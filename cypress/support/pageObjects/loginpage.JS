@@ -4,11 +4,12 @@ class LoginPage {
   }
 
   fillUsername(username) {
-    cy.get('#username').type(username)
+cy.get('[name="username"]').type(username)
+
   }
 
   fillPassword(password) {
-    cy.get('#password').type(password)
+    cy.get('[name="password"]').type(password)
   }
 
   clickLogin() {
